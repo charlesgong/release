@@ -34,6 +34,10 @@ done
 
 [[ -n "${destination}" && -n "${url}" ]]
 
+if [[ -n "${TEST_CURL_URLS_FILE:-}" ]]; then
+  printf '%s\n' "${url}" >> "${TEST_CURL_URLS_FILE}"
+fi
+
 if [[ "${url}" == */config ]]; then
   config_attempt=1
   if [[ -n "${TEST_CONFIG_ATTEMPT_FILE:-}" ]]; then
