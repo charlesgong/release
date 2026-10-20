@@ -157,6 +157,8 @@ groups:
     - rosa-e2e
     - rosa-marketplace-release-generator
     - sd-sre-secrets
+    updater_service_accounts:
+    - rosa-marketplace-release-generator
   hypershift-hybridsre:
     secret_collections:
     - hypershift-team
