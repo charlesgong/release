@@ -155,6 +155,7 @@ groups:
     - rosa-boundary
     - rosa-capa
     - rosa-e2e
+    - rosa-marketplace-release-generator
     - sd-sre-secrets
   hypershift-hybridsre:
     secret_collections:
